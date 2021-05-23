@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'CrackIT-Staffing-Service';
   imageObject: any;
+  currentYear = (new Date()).getFullYear();
   constructor() {
 
   }
