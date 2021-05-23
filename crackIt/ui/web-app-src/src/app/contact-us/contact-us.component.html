@@ -1,0 +1,63 @@
+<app-header [title]='title'></app-header>
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around  center" class="padding32 contactus"
+    fxLayoutGap='32px'>
+    <div class="address" fxFlex='33'>
+        <h2>Office Location:</h2>
+        <address>
+            <p>10/31, test </p>
+            <p>agsdigavsidgas </p>
+            <p>asdiuasdiasdi </p>
+            sdiasi - y28218
+        </address>
+    </div>
+    <div class="contactForm" fxFlex='33'>
+        <h2>Please fill the below form to reach us</h2>
+        <form [formGroup]="createForm" autocomplete="off">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput required formControlName='name'>
+                <mat-error *ngIf='createForm.get("name").hasError("required")' class="mb12">
+                    Name is required
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput required formControlName='email'>
+                <mat-error *ngIf='createForm.get("email").hasError("required")' class="mb12">
+                    Email is required
+                </mat-error>
+                <mat-error *ngIf="createForm.get('email').errors?.pattern">Please provide a valid
+                    email address</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input matInput required formControlName='phone' maxlength="10">
+                <mat-error *ngIf='createForm.get("phone").hasError("required")' class="mb12">
+                    Phone is required
+                </mat-error>
+                <mat-error *ngIf="createForm.get('phone').errors?.pattern">Please provide a valid
+                    Mobile Number</mat-error>
+                <mat-error *ngIf="createForm.get('phone').errors?.minlength">
+                    Phone number must be at least 10 numbers</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Subject</mat-label>
+                <input matInput required type="text" autocomplete="off" formControlName='subject'>
+                <mat-error *ngIf='createForm.get("subject").hasError("required")' class="mb12">
+                    Subject is required
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Message</mat-label>
+                <textarea matInput required formControlName='message'> </textarea>
+                <mat-error *ngIf='createForm.get("message").hasError("required")' class="mb12">
+                    Message is required
+                </mat-error>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit" [disabled]='!createForm.valid' (click)="onContinueToReview()">Submit</button>
+        </form>
+    </div>
+    <div fxFlex='33'>
+        <app-list></app-list>
+    </div>
+</div>

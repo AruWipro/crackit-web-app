@@ -1,0 +1,55 @@
+.content{
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    padding: 26px;
+    min-height: 25%;
+    span{
+        display: inline-block;
+        background: #d0d0d0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 36px;
+        vertical-align: middle;
+        padding: 30px;
+    }
+    span:hover {
+        background: #9092fc;
+        mat-icon{
+            color: white;
+        }
+    }
+    mat-icon{
+        font-size: 36px;
+        width: 36px;
+        height: 36px;
+    }
+    h1{
+        margin: 16px 0px;
+    }
+}
+
+.aboutHome{
+    padding: 16px 32px;
+}
+.iconurl{
+    a {
+        color: #9092fc;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #252582;
+        text-decoration: underline;
+    }
+}
+.homeContent{
+    background-color: white;
+    margin-bottom: 64px;
+}
+.mission, .vision{
+    border: 1px solid #efefef;
+    padding: 12px;
+    background: #fafafa;
+}
