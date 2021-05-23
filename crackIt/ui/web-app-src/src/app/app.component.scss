@@ -26,6 +26,7 @@
 
 // Added CSS for ToolBar
 mat-toolbar{
+  height: 72px;
   background-color: black !important;
   padding: 0 5px;
   .mat-button, .mat-icon-button, .mat-stroked-button{
@@ -34,4 +35,7 @@ mat-toolbar{
 }
 .mxImg {
   height: 72px;
+}
+.mat-toolbar-row, .mat-toolbar-single-row{
+  height: auto;
 }
