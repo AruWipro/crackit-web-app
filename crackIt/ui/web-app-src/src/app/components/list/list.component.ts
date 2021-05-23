@@ -10,14 +10,14 @@ import { Component, OnInit } from '@angular/core';
 export class ListComponent implements OnInit {
   lists: any;
   title: any;
-  // @Input: inputList;
+  @Input() inputList: any;
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    this.httpClient.get("assets/content/list.json").subscribe(data => {
-      this.lists = data;
-    })
-    // console.log(this.inputList);
+    // this.httpClient.get("assets/content/list.json").subscribe(data => {
+    //   this.lists = data;
+    // })
+    console.log(this.inputList);
   }
 
 }

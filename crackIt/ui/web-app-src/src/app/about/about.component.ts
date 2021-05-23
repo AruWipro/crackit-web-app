@@ -10,7 +10,15 @@ export class AboutComponent implements OnInit {
   title: any;
   sliderData: any;
   contents: any;
-
+  inputList = [
+    "Administrative",
+    "Executive Staffing",
+    "IT Staffing",
+    "Human Resources",
+    "Healthcare",
+    "Sales  Marketing",
+    "Industrial / Manufacturing"
+  ];
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
