@@ -6,9 +6,9 @@
     min-height: 25%;
     span{
         display: inline-block;
-        background: #d0d0d0;
-        width: 36px;
-        height: 36px;
+        background: #000;
+        width: 42px;
+        height: 42px;
         border-radius: 50%;
         text-align: center;
         line-height: 36px;
@@ -16,15 +16,16 @@
         padding: 30px;
     }
     span:hover {
-        background: #9092fc;
+        background: #e7790c;
         mat-icon{
             color: white;
         }
     }
     mat-icon{
-        font-size: 36px;
-        width: 36px;
-        height: 36px;
+        font-size: 42px;
+        width: 42px;
+        height: 42px;
+        color: #fff;
     }
     h1{
         margin: 16px 0px;
@@ -36,11 +37,11 @@
 }
 .iconurl{
     a {
-        color: #9092fc;
+        color: #ec9339;
         text-decoration: none;
     }
     a:hover {
-        color: #252582;
+        color: #e7790c;
         text-decoration: underline;
     }
 }
