@@ -12,9 +12,14 @@ export class StaffingServiceComponent implements OnInit {
   sliderData: any;
   contents: any;
   inputList = [
-    'wdw',
-    'sdsd'
-  ]
+    "Administrative",
+    "Executive Staffing",
+    "IT Staffing",
+    "Human Resources",
+    "Healthcare",
+    "Sales  Marketing",
+    "Industrial / Manufacturing"
+  ];
 
   constructor(private httpClient: HttpClient) { }
 

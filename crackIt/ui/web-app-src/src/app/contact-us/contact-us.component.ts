@@ -9,7 +9,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactUsComponent implements OnInit {
   title: string;
   createForm: FormGroup;
-
+  inputList = [
+    "Administrative",
+    "Executive Staffing",
+    "IT Staffing",
+    "Human Resources",
+    "Healthcare",
+    "Sales  Marketing",
+    "Industrial / Manufacturing"
+  ];
   constructor(private _fB: FormBuilder) { }
 
   ngOnInit(): void {
