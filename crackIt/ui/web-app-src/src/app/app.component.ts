@@ -22,6 +22,11 @@ export class AppComponent implements OnInit {
       image: 'assets/images/banner-2.jpg',
       thumbImage: 'assets/images/banner-2.jpg',
 
+    },
+    {
+      image: 'assets/images/banner-4.jpg',
+      thumbImage: 'assets/images/banner-4.jpg',
+
     }
     ];
   }
