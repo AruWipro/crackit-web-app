@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   imageObject: any;
-  
+
   constructor() {
 
   }
@@ -21,6 +21,11 @@ export class HomeComponent implements OnInit {
     }, {
       image: 'assets/images/banner-2.jpg',
       thumbImage: 'assets/images/banner-2.jpg',
+
+    },
+    {
+      image: 'assets/images/banner-4.jpg',
+      thumbImage: 'assets/images/banner-4.jpg',
 
     }
     ];
