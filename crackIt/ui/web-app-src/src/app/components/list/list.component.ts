@@ -14,10 +14,7 @@ export class ListComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    // this.httpClient.get("assets/content/list.json").subscribe(data => {
-    //   this.lists = data;
-    // })
-    console.log(this.inputList);
+
   }
 
 }

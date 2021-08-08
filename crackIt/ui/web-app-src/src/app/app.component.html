@@ -1,9 +1,32 @@
 <div>
+
+
+  <mat-toolbar class='contactSection'>
+    <div fxLayout='row' fxLayout.lt-md='column' fxLayoutAlign="space-between center" fxLayoutGap='6px'>
+      <div>
+        <span>sdsdsd</span>
+      </div>
+      <div fxLayout='row' fxLayoutGap.gt-md='12px'>
+        <span class="icons">
+          <mat-icon>phone</mat-icon>&nbsp; +61 68623234
+        </span>
+        <span class="icons">
+          <mat-icon>mail</mat-icon>&nbsp; test@test.com
+        </span>
+        <button mat-raised-button color="primary" routerLink="/home">
+          Employee Corner
+        </button>
+      </div>
+    </div>
+
+  </mat-toolbar>
+
   <mat-toolbar color="primary">
     <mat-toolbar-row class="cit-toolbar">
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
+
       <!-- logo starts here -->
       <!-- <span>Staffing Service</span> -->
       <img class="mxImg" src="../assets/images/logo.png">

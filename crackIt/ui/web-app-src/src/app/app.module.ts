@@ -24,6 +24,8 @@ import { StaffingServiceComponent } from './staffing-service/staffing-service.co
 import { EmployersComponent } from './employers/employers.component';
 import { JobSeekersComponent } from './job-seekers/job-seekers.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PopupComponent } from './popup/popup.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     StaffingServiceComponent,
     EmployersComponent,
     JobSeekersComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +51,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     MatIconModule,
     MatInputModule,
     MatButtonModule,
+    MatDialogModule,
     FlexLayoutModule,
     ReactiveFormsModule,
     FormsModule,
