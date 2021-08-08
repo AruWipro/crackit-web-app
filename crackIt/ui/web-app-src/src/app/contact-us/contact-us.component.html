@@ -12,7 +12,7 @@
     </div>
     <div class="contactForm" fxFlex='33'>
         <h2>Please fill the below form to reach us</h2>
-        <form [formGroup]="createForm" autocomplete="off">
+        <form [formGroup]="createForm" (ngSubmit)="onContinueToReview()" autocomplete="off">
             <mat-form-field appearance="outline">
                 <mat-label>Name</mat-label>
                 <input matInput required formControlName='name'>
@@ -54,7 +54,7 @@
                     Message is required
                 </mat-error>
             </mat-form-field>
-            <button mat-raised-button color="primary" type="submit" [disabled]='!createForm.valid' (click)="onContinueToReview()">Submit</button>
+            <button mat-raised-button color="primary" type="submit" [disabled]='!createForm.valid'>Submit</button>
         </form>
     </div>
     <div fxFlex='33'>

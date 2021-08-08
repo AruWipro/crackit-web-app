@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { Router } from '@angular/router';
+import { ApiServiceService } from '../api-service.service';
+import { PopupComponent } from '../popup/popup.component';
+import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -18,7 +21,9 @@ export class ContactUsComponent implements OnInit {
     "Sales  Marketing",
     "Industrial / Manufacturing"
   ];
-  constructor(private _fB: FormBuilder) { }
+  constructor(private _fB: FormBuilder, private api: ApiServiceService,
+    private router: Router,
+    public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.title = 'Contact Us';
@@ -32,10 +37,23 @@ export class ContactUsComponent implements OnInit {
     });
   }
   onContinueToReview() {
-    if(this.createForm.valid){
-      console.log(this.createForm.value);
+    if (this.createForm.valid) {
+      this.showPopup('Mail sent successfully');
+      // this.api.create(this.createForm.value).subscribe(data => {
+      // });;
     } else {
-      
+
     }
-   }
+  }
+
+  showPopup(data) {
+    const dialogRef = this.dialog.open(PopupComponent, {
+      height: 'auto',
+      width: '25%',
+      data: data
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      this.router.navigate(['/home'],{ skipLocationChange: true });
+    });
+  }
 }
