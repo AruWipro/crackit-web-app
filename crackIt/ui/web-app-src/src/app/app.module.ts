@@ -26,6 +26,8 @@ import { JobSeekersComponent } from './job-seekers/job-seekers.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PopupComponent } from './popup/popup.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { EmployeeCornerComponent } from './employee-corner/employee-corner.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     EmployersComponent,
     JobSeekersComponent,
     ContactUsComponent,
-    PopupComponent
+    PopupComponent,
+    EmployeeCornerComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +50,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatSelectModule,
     MatListModule,
     MatIconModule,
     MatInputModule,
