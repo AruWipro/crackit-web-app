@@ -38,3 +38,27 @@ mat-form-field{
 .contactLink{
     color: red;
 }
+.btn {
+    background-color: #e7790c !important;
+}
+
+.content {
+    background-color: #e74536;
+    padding: 64px;
+    color: white;
+    p{
+        font-size: 64px;
+        padding: 24px 0px;
+    }
+    p:last-child{
+        text-align: right;
+        color: #0f1941;
+    }
+}
+
+.txtBld{
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-top: 12px;
+}

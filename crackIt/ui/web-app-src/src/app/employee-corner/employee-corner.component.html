@@ -1,0 +1,104 @@
+<div class="content">
+    <p>we help you hire right talent</p> <br />
+    <p>at the right time.</p>
+</div>
+
+
+<strong class="txtBld">Contact Information</strong>
+<div class="padding32 contactus">
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()" autocomplete="off" fxLayout="column" fxFlex='50'
+        fxLayoutAlign="space-around  center" fxLayout.lt-md="column">
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput required formControlName='name'>
+            <mat-error *ngIf='createForm.get("name").hasError("required")' class="mb12">
+                First Name is required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput required formControlName='lastName'>
+            <mat-error *ngIf='createForm.get("lastName").hasError("required")' class="mb12">
+                Last Name is required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput required formControlName='email'>
+            <mat-error *ngIf='createForm.get("email").hasError("required")' class="mb12">
+                Email is required
+            </mat-error>
+            <mat-error *ngIf="createForm.get('email').errors?.pattern">Please provide a valid
+                email address</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Phone</mat-label>
+            <input matInput required formControlName='phone' maxlength="10">
+            <mat-error *ngIf='createForm.get("phone").hasError("required")' class="mb12">
+                Phone is required
+            </mat-error>
+            <mat-error *ngIf="createForm.get('phone').errors?.pattern">Please provide a valid
+                Mobile Number</mat-error>
+            <mat-error *ngIf="createForm.get('phone').errors?.minlength">
+                Phone number must be at least 10 numbers</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Destination</mat-label>
+            <input matInput required type="text" autocomplete="off" formControlName='destination'>
+            <mat-error *ngIf='createForm.get("destination").hasError("required")' class="mb12">
+                Destination is required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Company</mat-label>
+            <input matInput required formControlName='company'>
+            <mat-error *ngIf='createForm.get("company").hasError("required")' class="mb12">
+                Comapny is required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Need your service</mat-label>
+            <mat-select required formControlName='service'>
+                <mat-option *ngFor="let service of services" [value]="service.value">
+                    {{service.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <p>Job Information</p>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Job Title</mat-label>
+            <input matInput required formControlName='jobtitle'>
+            <mat-error *ngIf='createForm.get("jobtitle").hasError("required")' class="mb12">
+                Job Title is required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Sector</mat-label>
+            <mat-select required formControlName='sector'>
+                <mat-option *ngFor="let sector of Sectors" [value]="sector.value">
+                    {{sector.viewValue}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf='createForm.get("sector").hasError("required")' class="mb12">
+                Sector is required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Job Specification</mat-label>
+            <textarea matInput required formControlName='jobSpecification'> </textarea>
+            <mat-error *ngIf='createForm.get("jobSpecification").hasError("required")' class="mb12">
+                Job Specification is required
+            </mat-error>
+        </mat-form-field>
+        <div>
+            <button mat-raised-button color="primary" class="btn" type="submit"
+                [disabled]='!createForm.valid'>Submit</button> &nbsp;&nbsp;&nbsp;
+            <button mat-raised-button type="reset">Reset</button>
+        </div>
+        <br />
+        <br />
+        <br />
+    </form>
+</div>
