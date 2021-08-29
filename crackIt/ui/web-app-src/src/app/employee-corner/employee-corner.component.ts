@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { ApiServiceService } from '../api-service.service';
+import { PopupComponent } from '../popup/popup.component';
 
 @Component({
   selector: 'app-employee-corner',
@@ -15,12 +19,14 @@ export class EmployeeCornerComponent implements OnInit {
     {value: 'RPO', viewValue: 'RPO'}
   ];
   Sectors = [
-    { value: 'Agro', viewValue: 'Agro &amp; Seeds' },
-    { value: 'Banking', viewValue: 'Banking &amp; finance' },
+    { value: 'Agro', viewValue: 'Agro & Seeds' },
+    { value: 'Banking', viewValue: 'Banking & finance' },
     { value: 'GeneralAdmin', viewValue: '	General Administration' },
     { value: 'HR', viewValue: 'Human Resources' }
 ];
-  constructor(private _fB: FormBuilder) { }
+constructor(private _fB: FormBuilder, private api: ApiServiceService,
+  private router: Router,
+  public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.createForm = this._fB.group({
@@ -40,6 +46,24 @@ export class EmployeeCornerComponent implements OnInit {
 
   onSubmit(){
     console.log(this.createForm.value);
+    if (this.createForm.valid) {
+      this.showPopup('Fprm sent successfully');
+      // this.api.create(this.createForm.value).subscribe(data => {
+      // });;
+    } else {
+
+    }
+  }
+
+  showPopup(data) {
+    const dialogRef = this.dialog.open(PopupComponent, {
+      height: 'auto',
+      width: '25%',
+      data: data
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      this.router.navigate(['/home'],{ skipLocationChange: true });
+    });
   }
 
 }
