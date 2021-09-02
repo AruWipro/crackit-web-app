@@ -1,11 +1,11 @@
-<div class="contents">
-    <p>we help you hire right talent</p> <br />
+<div class="contents" [ngsReveal]="{delay: 700, reset: false, origin: 'bottom'}">
+    <p>We hire the right talent for you</p> <br />
     <p>at the right time.</p>
 </div>
 
 
-<strong class="txtBld">Contact Information</strong>
-<div class="padding32 contactus">
+<h1 class="txtBld" [ngsReveal]="{delay: 700, reset: false, origin: 'bottom'}">Contact Information</h1>
+<div class="padding32 contactus" [ngsReveal]="{delay: 700, reset: true, origin: 'bottom'}">
     <form [formGroup]="createForm" (ngSubmit)="onSubmit()" autocomplete="off" fxLayout="column" fxFlex='50'
         fxLayoutAlign="space-around  center" fxLayout.lt-md="column">
         <mat-form-field appearance="outline">
