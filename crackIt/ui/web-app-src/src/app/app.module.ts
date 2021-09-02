@@ -28,6 +28,7 @@ import { PopupComponent } from './popup/popup.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { EmployeeCornerComponent } from './employee-corner/employee-corner.component';
 import {MatSelectModule} from '@angular/material/select';
+import {NgsRevealModule} from 'ngx-scrollreveal';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgsRevealModule,
     MatToolbarModule,
     MatSidenavModule,
     MatSelectModule,

@@ -23,7 +23,9 @@
     "@angular/platform-browser-dynamic": "~11.1.0",
     "@angular/router": "~11.1.0",
     "ng-image-slider": "^2.6.4",
+    "ngx-scrollreveal": "^3.0.0",
     "rxjs": "~6.6.0",
+    "scrollreveal": "^4.0.9",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },
