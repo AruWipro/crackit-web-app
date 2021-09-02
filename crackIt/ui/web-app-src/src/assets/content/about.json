@@ -2,32 +2,34 @@
     "title": "About Us",
     "sliderData": [
         {
-            "title": "Customer Service",
-            "content": "Our focus on quality customer service is mirrored within all levels of the organization, this is one differentiator between Pioneer and others. Our executive team is easily accessible to the customers for support.Our focus on quality customer service is mirrored within all levels of the organization,this is one differentiator between Pioneer and others. Our executive team is easily accessible to the customers for support."
+            "title": "How do we serve?",
+            "content": "Our focus on quality customer service is mirrored within all levels of the organization, this is one differentiator between CrackIT and others. Our executive team is easily accessible to the customers for support.Our focus on quality customer service is mirrored within all levels of the organization,this is one differentiator between CrackIT and others. Our executive team is easily accessible to the customers for support."
         },
         {
-            "title": "Our Commitment",
-            "content": "Our focus on quality customer service is mirrored within all levels of the organization, this is one differentiator between Pioneer and others. Our executive team is easily accessible to the customers for support.Our focus on quality customer service is mirrored within all levels of the organization,this is one differentiator between Pioneer and others. Our executive team is easily accessible to the customers for support."
+            "title": "What do we promise?",
+            "content": "We promise services that are both reliable and of the highest quality. We are conscious to the fast growing IT coupled with ever growing competition in terms of time and quality.  We promise to provide personnel who can deliver the quality and quantity of service your business expects and deserves. "
         },
         {
-            "title": "Our Leadership",
-            "content": "Our focus on quality customer service is mirrored within all levels of the organization, this is one differentiator between Pioneer and others. Our executive team is easily accessible to the customers for support.Our focus on quality customer service is mirrored within all levels of the organization,this is one differentiator between Pioneer and others. Our executive team is easily accessible to the customers for support."
+            "title": "How do we lead?",
+            "content": "As leaders we always insist on the Highest Standards. We identify people who can aspire high, think critically, create innovatively and turn out the best results. We constantly update our methods and manners of selecting professionals matching today fast changing business environment"
         },
         {
-            "title": "Service Excellence",
-            "content": "Our focus on quality customer service is mirrored within all levels of the organization, this is one differentiator between Pioneer and others. Our executive team is easily accessible to the customers for support.Our focus on quality customer service is mirrored within all levels of the organization,this is one differentiator between Pioneer and others. Our executive team is easily accessible to the customers for support."
+            "title": "Where do we excel?",
+            "content": "We strive constantly to concretize the term excellence in terms of the essential and intrinsic quality of services we provide. We take pride in the Character, Purpose, Flexibility and Balance we inculcate as part of training to our personnel so that wherever they turn out to be the brand ambassadors for the reputation of your esteemed organization."
         }
     ],
     "aboutContent": [
         {   
-            "title": "AAAAA",
-            "content": "We offer world-class staffing on a temporary, temporary-to-hire, and direct-hire basis.With years of  experience serving clients around the Canada, Crack IT provides employment to more than half a    million people annually. Crack IT has maintained a leadership position through the years based on a             valuable premise: we invest in people. Today that focus benefits our customers wherever they operate around             the globe – in a growing number of specialized fields. And we’ll continue to meet the evolving challenges of workforce flexibility with staffing solutions tailored to your precise business needs."
+           "content": "We are an emerging global level operating service agency aspiring for leadership with a promise to meet the ever growing challenges of workforce flexibility."
         },
         {
-            "content": "We offer world-class staffing on a temporary, temporary-to-hire, and direct-hire basis.With years of  experience serving clients around the Canada, Crack IT provides employment to more than half a    million people annually. Crack IT has maintained a leadership position through the years based on a             valuable premise: we invest in people. Today that focus benefits our customers wherever they operate around             the globe – in a growing number of specialized fields. And we’ll continue to meet the evolving challenges of workforce flexibility with staffing solutions tailored to your precise business needs."
+            "content": "We are specialized in offering staffing solutions all over the world by offering employment to young, energetic and resourceful, staff from a wide range of technical experience and expertise in innumerable fields of specialization"
         },
         {
-            "content": "We offer world-class staffing on a temporary, temporary-to-hire, and direct-hire basis.With years of  experience serving clients around the Canada, Crack IT provides employment to more than half a    million people annually. Crack IT has maintained a leadership position through the years based on a             valuable premise: we invest in people. Today that focus benefits our customers wherever they operate around             the globe – in a growing number of specialized fields. And we’ll continue to meet the evolving challenges of workforce flexibility with staffing solutions tailored to your precise business needs."
+            "content": "We operate with an abiding faith in the abilities of the promising human resource and seek constant betterment of prospects through quality, excellence, service and satisfaction in the chosen field"
+        },
+        {
+            "content": "We benefit our clientele by equipping them with professional enthusiasts having outstanding technical performance precisely to meet the business needs as per client terms and conditions"
         }
     ]
 }
