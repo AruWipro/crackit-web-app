@@ -143,7 +143,7 @@
     <div fxLayout="row" fxLayout.lt-md="column" class="companies" fxLayoutAlign="space-evenly center">
         <div fxFlex='75'>
             <ng-image-slider [images]="clientImages" [infinite]="true" [autoSlide]="1"
-                [imageSize]="{width: '50%', height: 200}" slideImage="2" #nav></ng-image-slider>
+            [manageImageRatio] = true slideImage="2" #nav></ng-image-slider>
         </div>
     </div>
 </div>
