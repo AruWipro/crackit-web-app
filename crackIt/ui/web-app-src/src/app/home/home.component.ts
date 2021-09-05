@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,9 +17,10 @@ export class HomeComponent implements OnInit {
       image: 'assets/images/banner-1.jpg',
       thumbImage: 'assets/images/banner-1.jpg',
 
-    }, {
-      image: 'assets/images/banner-2.jpg',
-      thumbImage: 'assets/images/banner-2.jpg',
+    }, 
+    {
+      image: 'assets/images/banner-3.jpg',
+      thumbImage: 'assets/images/banner-3.jpg',
 
     },
     {
