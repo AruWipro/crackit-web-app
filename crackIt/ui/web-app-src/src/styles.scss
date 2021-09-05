@@ -80,6 +80,9 @@ mat-form-field {
     color: #fff;
     margin-bottom: 40px;
     text-align: center;
+    h1{
+        font-size: 26px;
+    }
   }
   .achievement {
     margin-top: 36px;
@@ -97,6 +100,12 @@ mat-form-field {
 .companies{
     margin-top: 12px;
     margin-bottom: 12px;
+    h1{
+        text-align: center;
+        color: #e7790c;
+        font-weight: 600;
+        font-size: 26px;
+    }
 }
 .custom-image-main {
     img{
