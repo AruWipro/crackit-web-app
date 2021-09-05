@@ -96,11 +96,18 @@ mat-form-field {
 }
 .companies{
     margin-top: 12px;
+    margin-bottom: 12px;
 }
-.slick-slide {
-	margin: 0 26px;
+.custom-image-main {
+    img{
+        background-color: white !important;
+    }
 }
-/* the parent */
-.slick-list {
-	margin: 0 -26px;
+.ng-image-slider .ng-image-slider-container .main .main-inner .img-div img 
+{
+    background-color: white !important;
+}
+.prev-icon , .next-icon{
+    background-color: #e7790c !important;
+    color: white !important;
 }
