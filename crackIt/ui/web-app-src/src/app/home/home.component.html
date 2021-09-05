@@ -56,7 +56,8 @@
     </div>
 
 
-    <div fxLayout="column" fxLayoutAlign="space-evenly center" class="aboutHome" fxLayoutGap='32px' [ngsReveal]="{delay: 700, reset: true, origin: 'left'}" >
+    <div fxLayout="column" fxLayoutAlign="space-evenly center" class="aboutHome" fxLayoutGap='32px'
+        [ngsReveal]="{delay: 700, reset: true, origin: 'left'}">
         <h1>Staffing Service</h1>
         <p>
             Crack IT is a Staffing Services company providing a gamut of Staffing Solutions to various
@@ -82,8 +83,8 @@
         </p>
     </div>
 
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" class="aboutHome" [ngsReveal]="{delay: 700, reset: true, origin: 'left'}"
-        fxLayoutGap='32px'>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" class="aboutHome"
+        [ngsReveal]="{delay: 700, reset: true, origin: 'left'}" fxLayoutGap='32px'>
         <div class="mission">
             <h1>Our Mission</h1>
             <p>
@@ -108,6 +109,41 @@
                 and
                 competencies, when and where you need them. We guarantee your complete satisfaction.
             </p>
+        </div>
+    </div>
+
+    <div class="counts" id='counts'>
+        <span class="titled">
+            <h1>
+                What we have achieved so far
+            </h1>
+            <p>Iusto et labore modi qui sapiente xpedita tempora et aut non ipsum consequatur illo.</p>
+        </span>
+        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" class="achievement"
+            fxLayoutGap='32px'>
+            <div class="clients">
+                <p>4535</p>
+                <span>Clients</span>
+            </div>
+            <div class="projects">
+                <p>4535</p>
+                <span>Projects</span>
+            </div>
+            <div class="HoursOfSupport">
+                <p>4535</p>
+                <span>Hours of Support</span>
+            </div>
+            <div class="Workers">
+                <p>4535</p>
+                <span>Hard Workers</span>
+            </div>
+        </div>
+
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column" class="companies" fxLayoutAlign="space-evenly center">
+        <div fxFlex='75'>
+            <ng-image-slider [images]="clientImages" [infinite]="true" [autoSlide]="1"
+            [manageImageRatio] = true slideImage="2" #nav></ng-image-slider>
         </div>
     </div>
 </div>
