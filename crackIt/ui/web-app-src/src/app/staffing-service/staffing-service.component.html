@@ -3,6 +3,17 @@
 
 <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly start" class="mainContent" fxLayoutGap='32px'>
     <div fxFlex='75'>
+        <div fxLayout="row" fxLayout.lt-md="column" 
+            fxLayoutGap='32px'>
+            <button mat-raised-button color="primary" class="btn" routerLink="/contactus">
+                Write to us
+            </button>
+            <button mat-raised-button color="primary" class="btn" routerLink="/employeeCorner">
+                Post a Job
+            </button>
+         
+        </div>
+        <br/>
         <p *ngFor='let content of contents'>
             {{content.content}}
         </p>
