@@ -62,7 +62,7 @@ import {NgsRevealModule} from 'ngx-scrollreveal';
     ReactiveFormsModule,
     FormsModule,
     NgImageSliderModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

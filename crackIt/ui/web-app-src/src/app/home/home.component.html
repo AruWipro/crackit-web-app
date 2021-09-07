@@ -6,7 +6,8 @@
         [imageSize]="{width: '100%', height: '60%'}" slideImage="1"></ng-image-slider>
 
     <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly start" class="padding32" fxLayoutGap='32px'>
-        <div class="employers content" fxFlex='33' [ngsReveal]="{delay: 700, reset: true, origin: 'bottom'}">
+        <div class="employers content" fxFlex='33' fxFlex.xs='100'
+            [ngsReveal]="{delay: 700, reset: false, origin: 'bottom'}">
             <span>
                 <mat-icon aria-hidden="false" aria-label="Example home icon">perm_identity</mat-icon>
             </span>
@@ -20,7 +21,8 @@
             </p>
             <p class="iconurl"><a class="themebutton" href="#">Read More</a></p>
         </div>
-        <div class="jobSeekers content" fxFlex='33' [ngsReveal]="{delay: 700, reset: true, origin: 'bottom'}">
+        <div class="jobSeekers content" fxFlex='33' fxFlex.xs='100'
+            [ngsReveal]="{delay: 700, reset: false, origin: 'bottom'}">
             <span>
                 <mat-icon aria-hidden="false" aria-label="Example home icon">next_week</mat-icon>
             </span>
@@ -36,7 +38,8 @@
             </p>
             <p class="iconurl"><a class="themebutton" href="#">Read More</a></p>
         </div>
-        <div class="ourTeam content" fxFlex='33' [ngsReveal]="{delay: 700, reset: true, origin: 'bottom'}">
+        <div class="ourTeam content" fxFlex='33' fxFlex.xs='100'
+            [ngsReveal]="{delay: 700, reset: false, origin: 'bottom'}">
             <span>
                 <mat-icon aria-hidden="false" aria-label="Example home icon">supervisor_account</mat-icon>
             </span>
@@ -81,8 +84,8 @@
         </p>
     </div>
 
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" class="aboutHome" [ngsReveal]="{delay: 700, reset: true, origin: 'left'}"
-        fxLayoutGap='32px'>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" class="aboutHome"
+        [ngsReveal]="{delay: 700, reset: false, origin: 'left'}" fxLayoutGap='32px'>
         <div class="mission">
             <h1>Our Mission</h1>
             <p>
@@ -110,47 +113,39 @@
         </div>
     </div>
 
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-        <div class="container">
-  
-          <div class="text-center title">
-            <h3>What we have achieved so far</h3>
+    <div class="counts" id='counts' [ngsReveal]="{delay: 700, reset: false, origin: 'left'}">
+        <span class="titled">
+            <h1>
+                What We have achieved so far
+            </h1>
             <p>Iusto et labore modi qui sapiente xpedita tempora et aut non ipsum consequatur illo.</p>
-          </div>
-  
-          <div class="row counters position-relative">
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
+        </span>
+        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" class="achievement"
+            fxLayoutGap='32px'>
+            <div class="clients">
+                <p>4535</p>
+                <span>Clients</span>
             </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
+            <div class="projects">
+                <p>4535</p>
+                <span>Projects</span>
             </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+            <div class="HoursOfSupport">
+                <p>4535</p>
+                <span>Hours of Support</span>
             </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
+            <div class="Workers">
+                <p>4535</p>
+                <span>Hard Workers</span>
             </div>
-  
-          </div>
-  
         </div>
-      </section><!-- End Counts Section -->
-</div>
 
-<!-- Vendor JS Files -->
-<script src="./../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./../../assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="./../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="./../../assets/vendor/php-email-form/validate.js"></script>
-<script src="./../../assets/vendor/purecounter/purecounter.js"></script>
-<script src="./../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    </div>
+    <div fxLayout="row" class="companies" fxLayoutAlign="space-evenly center" [ngsReveal]="{delay: 700, reset: false, origin: 'left'}">
+        <div fxFlex='85'>
+            <h1>Our Partners</h1>
+            <ng-image-slider [images]="clientImages" [infinite]="true" [autoSlide]="1"
+                [imageSize]="{width: '25%', height: 150}" slideImage="2" #nav></ng-image-slider>
+        </div>
+    </div>
+</div>
