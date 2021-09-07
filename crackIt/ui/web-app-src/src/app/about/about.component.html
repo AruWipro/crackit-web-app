@@ -1,7 +1,7 @@
 <app-header [title]='title'></app-header>
 
 
-<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly start" class="mainContent" fxLayoutGap='32px'>
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-evenly start" class="mainContent" fxLayoutGap='32px' [ngsReveal]="{delay: 600, reset: false, origin: 'bottom'}"> 
     <div fxFlex='75'>
         <h1>Who are we ?</h1>
         <p *ngFor='let content of contents'>
@@ -10,7 +10,7 @@
         <!-- 4 rows design -->
         <app-slider-components [sliderData]='sliderData' *ngIf='sliderData'></app-slider-components>
     </div>
-    <div fxFlex='25'>
+    <div fxFlex='25' [ngsReveal]="{delay: 700, reset: false, origin: 'bottom'}">
         <app-list [inputList]='inputList'></app-list>
     </div>
 </div>
