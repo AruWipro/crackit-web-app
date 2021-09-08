@@ -19,10 +19,10 @@ export class EmployeeCornerComponent implements OnInit {
     {value: 'RPO', viewValue: 'RPO'}
   ];
   Sectors = [
-    { value: 'Agro', viewValue: 'Agro & Seeds' },
+    { value: 'ECommerce', viewValue: 'ECommerce' },
     { value: 'Banking', viewValue: 'Banking & finance' },
     { value: 'GeneralAdmin', viewValue: '	General Administration' },
-    { value: 'HR', viewValue: 'Human Resources' }
+    { value: 'HR', viewValue: 'Human Resources' },
 ];
 constructor(private _fB: FormBuilder, private api: ApiServiceService,
   private router: Router,
