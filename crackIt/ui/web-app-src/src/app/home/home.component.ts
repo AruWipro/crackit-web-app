@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.imageObject = [{
       image: 'assets/images/banner-1.jpg',
-      thumbImage: 'assets/images/banner-1.jpg',
+      thumbImage: 'assets/images/banner-2.jpg',
 
     },
     {
