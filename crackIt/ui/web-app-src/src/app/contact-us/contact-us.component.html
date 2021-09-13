@@ -2,14 +2,23 @@
 <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around  center" class="padding32 contactus" [ngsReveal]="{delay: 600, reset: false, origin: 'bottom'}"
     fxLayoutGap='32px'>
     <div class="address" fxFlex='33'>
-        <h2>Office Location:</h2>
+        <h2>🏢 Office Location:</h2>
         <address>
             <p>Apt #311  </p>
             <p>130 Parkway Forest Dr </p>
             <p>North York,Ontario</p>
             <p>M2J1L7</p>
         </address>
+        <br>
+        <h2>☎️ Dial us at:</h2>
+        <address>
+            <p>+1 647-558-0202 </p>
+        </address>
+    
     </div>
+
+    
+    
     <div class="contactForm" fxFlex='33' [ngsReveal]="{delay: 800, reset: false, origin: 'left'}">
         <h2>Please fill the below form to reach us</h2>
         <form [formGroup]="createForm" (ngSubmit)="onContinueToReview()" autocomplete="off">
